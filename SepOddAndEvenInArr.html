@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Seprate into Odd and Even in Array</title>
+</head>
+<script>
+data = [ '1', '3', '6', '9', '44' ]
+var oddArr=[];
+var evenArr = [];
+data.sort(function(a, b) {
+  return a - b;
+});
+console.log(data)
+data.filter(data => data%2!==0?oddArr.push(data):evenArr.push(data));
+console.log(oddArr,evenArr);
+
+
+</script>
+<body>
+
+    <title>Seprate into Odd and Even in Array</title>
+    <p>Check in console</p>
+
+</body>
+</html>
