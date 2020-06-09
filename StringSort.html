@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array String Sort</title>
+</head>
+<script>
+data = [ 'Karthik', '23000', 'rohan', '81734', 'varshini', '12343' ]
+var nameArr = [];
+var nameLenArr=[];
+var sortNameArr=[]
+data.filter((data,index)=>index%2===0?nameArr.push(data):'');
+nameArr.filter(data=>nameLenArr.push(data.length));
+nameLenArr.sort(function(a, b){return b-a});
+nameLenArr.forEach(e => nameArr.forEach(data=>data.length == e?sortNameArr.push(data):''))
+console.log(sortNameArr.join('\n'))
+
+
+</script>
+<body>
+
+    <title>Array String Sort</title>
+    <p>Check in console</p>
+
+</body>
+</html>
