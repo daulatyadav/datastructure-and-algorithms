@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Split Number into digits</title>
+</head>
+<script>
+data = 12345
+var oddArr = [];
+var arr = data.toString().split('').map(Number);
+    for(let i=0; i<arr.length;i++){
+        arr[i]%2!==0?oddArr.push(arr[i]):'';
+    }
+console.log(oddArr.length === 0? -1 : oddArr.join(' '));
+
+
+
+</script>
+<body>
+
+<h1>Split Number into digits</h1>
+<p>Check in console</p>
+
+</body>
+</html>
