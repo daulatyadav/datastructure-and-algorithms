@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Sort Based on Salary</title>
+</head>
+<script>
+data = [ 'Karthik', '23000', 'rohan', '81734', 'varshini', '12343' ]
+var empObj =[]
+for(let i = 0; i<data.length; i=i+2){
+    empObj.push({"name":data[i],"salary":data[i+1]})
+}
+empObj.sort(function(a, b){
+  return a.salary - b.salary;
+});
+empObj.forEach(data=> console.log(data.name))
+</script>
+<body>
+
+    <title>Employee Sort Based on Salary</title>
+    <p>Check in console</p>
+
+</body>
+</html>
