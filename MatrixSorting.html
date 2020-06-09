@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Sort Based on Salary</title>
+</head>
+<script>
+userInput = [ '87 21 34', '89 32 78', '12 23 45' ]
+
+userInput.forEach(data =>{
+    arr = arr.concat(data.split(" ")) 
+})
+arr.sort(function(a, b)
+  { return a-b});
+const result = new Array(Math.ceil(arr.length / 3))
+  .fill()
+  .map(_ => arr.splice(0, 3).join(' '))
+console.log(result.join('\n'))
+</script>
+<body>
+
+    <title>Employee Sort Based on Salary</title>
+    <p>Check in console</p>
+
+</body>
+</html>
