@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>You are given a number with duplicate digits your task is to remove the immediate duplicate digits and print the result</title>
+
+</head>
+<script>
+data = 1331;
+var numArr = data.toString().split('')
+numArr.forEach((e,i)=>{
+    if(numArr[i]===numArr[i+1] && numArr[i+1]!== undefined){
+        numArr.splice(i, 2)
+    }
+})
+console.log(numArr.join(''))
+
+</script>
+<body>
+
+    <title>You are given a number with duplicate digits your task is to remove the immediate duplicate digits and print the result</title>
+    <p>Check in console</p>
+
+</body>
+</html>
