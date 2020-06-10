@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Print the number which is repeated twice</title>
+</head>
+<script>
+data = [ '13', '12', '13', '12', '13', '14', '14' ]
+data = data.sort()
+var twiceRepArr =[]
+var unqData = [...new Set(data)]
+unqData.forEach(e => {
+    if(data.lastIndexOf(e)-data.indexOf(e) == 1){
+        twiceRepArr.push(e)
+    }
+} )
+console.log(twiceRepArr.join(' '))
+
+
+</script>
+<body>
+
+    <title>Print the number which is repeated twice</title>
+    <p>Check in console</p>
+
+</body>
+</html>
