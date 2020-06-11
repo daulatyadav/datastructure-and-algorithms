@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Square from the 4 points</title>
+    <script>
+var userInput = [ '10 10', '10 20', '20 20', '20 10' ]
+userInput.forEach((data,i)=> 
+  {
+   i!==3? j=i+1:j=0
+    let dis = Math.sqrt(Math.pow((userInput[j].split(" ")[1]-userInput[i].split(" ")[1]), 2)+ Math.pow((userInput[j].split(" ")[0]-userInput[i].split(" ")[0]), 2))
+     disArr.push(dis);
+  }
+)
+console.log(disArr[0]===disArr[1] && disArr[1]===disArr[2] && disArr[2]===disArr[3] && disArr[3]===disArr[0]?"yes":"no");
+
+
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>
