@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<p>>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    userInput = [3,"fdgdf","sfdsf","hghgdrvwo"]
+userInput.shift();
+
+var checkArr = [];
+var checkArrVal =[];
+userInput.forEach(data=>{
+    let wordArr = [];
+    wordArr = data.split('');
+   
+    wordArr.forEach(e=>{
+        if(e.toLowerCase()=="a" || e.toLowerCase()=="e" ||
+        e.toLowerCase()=="i" || e.toLowerCase()=="o" ||
+        e.toLowerCase()=="u"){
+            checkArr.push('yes');
+        }else checkArr.push('no');
+    });
+    checkArr.includes("yes")?checkArrVal.push("T"):checkArrVal.push("F");
+    checkArr = [];
+});
+console.log(checkArrVal.includes("F")?"no":"yes");
+    </script>
+</head>
+<body>
+    <p>Given a number N and an array of N strings,Print yes, if all strings have atleast one vowel in them otherwise print no.
+        Input Size : N <= 1000
+        Sample Testcase :
+        INPUT
+        5
+        code
+        overload
+        vishal
+        sundar
+        anish
+        OUTPUT
+        yes
+        
+        </p>
+</body>
+</html>
