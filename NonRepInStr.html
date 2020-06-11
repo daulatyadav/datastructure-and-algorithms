@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data =['mississipie'] 
+data = data[0].split("")
+var nonRepArr = []
+var uniq = [ ...new Set(data) ]
+uniq.forEach(e=>{
+    if(data.lastIndexOf(e)-data.indexOf(e)===0){
+        nonRepArr.push(e)
+    }
+})
+console.log(nonRepArr.join(''))
+    </script>
+</head>
+<body>
+    <p>
+        Rahul is given a task to manipulate a string, He hired you as a developer your task is to delete all the repeating characters and print the result left.
+
+Input Description:
+You are given a string ‘s’
+
+Output Description:
+Print the remaining string
+
+Sample Input :
+mississipie
+Sample Output :
+mpe
+    </p>
+</body>
+</html>
