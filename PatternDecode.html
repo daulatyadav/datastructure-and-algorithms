@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var data = [ 'ABCdEFGHIJKLMNOPQRSTUVWXYz', '23' ]
+    var amt = userInput[0].split(" ")[1];
+  charData = data[0].toString().split("")
+  var encodeArr = []
+  charData.forEach(data=>{
+      let diff = data.charCodeAt() + Number(amt)
+      var val;
+      
+      if(data.charCodeAt()>64 && data.charCodeAt()<91){
+          diff>90? val=64+diff-90: val = diff;
+      }
+      if(data.charCodeAt()>96 && data.charCodeAt()<123){
+          diff>122? val=96+diff-122: val = diff;
+      }
+      encodeArr.push(String.fromCharCode(val))
+  }
+        )
+        console.log(encodeArr.join(''))
+
+    </script>
+</head>
+<body>
+    <h7>Check Output in Console.</h7>
+    <p>The Caesar Cipher technique is one of the earliest and simplest method of encryption technique. It’s simply a type of substitution cipher, i.e., each letter of a given text is replaced by a letter some fixed number of positions down the alphabet. For example with a shift of 1, A would be replaced by B, B would become C, and so on. The method is apparently named after Julius Caesar, who apparently used it to communicate with his officials.For the given input string(S) and shift print the encrypted string.
+        Sample Testcase :
+        INPUT
+        ABCdEFGHIJKLMNOPQRSTUVWXYz 23
+        OUTPUT
+        XYZaBCDEFGHIJKLMNOPQRSTUVw</p>
+    
+</body>
+</html>
