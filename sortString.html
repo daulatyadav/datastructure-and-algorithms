@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<p>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+     var powArr =[]
+    var arr=[]
+    var powArrStr=[]
+    userInput= [ 'Mjolnir 200', 'StormBreaker 1000', 'Asgardian 560' ]
+
+userInput.forEach(e=>{
+  e=e.split(' ')
+  arr = arr.concat(e)
+  powArr.push(e[1])
+})
+powArr.sort(function(a,b){
+    return a-b
+})
+powArr.forEach(e=>{
+   let  index = arr.indexOf(e)-1
+   
+   powArrStr.push(arr[index])
+})
+powArrStr.forEach((e,i)=>{
+    console.log(1+i+ " " + e); 
+})
+
+</script>
+<body>
+    <p>
+        Thor wants to sort his weapons based on increasing value of its power to kill. The best coders in his team have done the task but are unable to sort the data in O(NlogN) time. Try to develop code that can sort the data in the required time complexity.
+
+Constraint:
+
+Power values lie between 0 and 10000
+
+ 
+
+Input Description:
+Name of weapons with their power denoted beside it.
+
+Output Description:
+Weapon named sorted in order of increasing power
+
+Sample Input :
+Mjolnir 200
+StormBreaker 1000
+Asgardian 560
+Sample Output :
+1 Mjolnir
+2 Asgardian
+3 StormBreaker
+    </p>
+</body>
+</html>
