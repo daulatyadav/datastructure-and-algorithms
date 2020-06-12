@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        data = ['r','a','j','a']
+var vowSum = 0
+console.log(data)
+data.forEach(e=>{
+    e=='a'||e=='e'||e=='i'||e=='o'||e=='u'? vowSum=vowSum+ Number(e.charCodeAt(0)):""
+})
+console.log(vowSum%8===0?1:0 );
+    </script>
+</head>
+<body>
+    <p>
+        You are given a ‘true’ string. String is called true if weight of string is multiple of 8. Your task is to tell whether a string can be declared True or Not. Weight of string is the sum of ASCII value of Vowel character(s) present in the string.
+
+Input Description:
+You are given as string ‘s’ in lower cases
+
+Output Description:
+Print 1 for true and 0 for false
+
+Sample Input :
+raja
+Sample Output :
+0
+    </p>
+</body>
+</html>
