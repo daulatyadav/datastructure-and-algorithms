@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var userInput=[ 'Guvi yuvi yuvirat' ]
+        var a = data[0].split("")
+var b = data[1].split("")
+var c = data[2].split("")
+var minData = a.length<b.length?a.length<c.length? a:c:b.length<c.length?b:c;
+var comArr = []
+minData.forEach(e=>{
+    a.includes(e)&&b.includes(e)&&c.includes(e)?comArr.push(e):''
+})
+console.log(comArr.length==0?comArr.join(''):-1)
+    </script>
+</head>
+<body>
+Aditi is fond of strings.she heard about Lcs for two strings.Now she wants to try this for 3 strings.But in between she got confused now, your task is to help her.You are given exactly 3 strings.
+Develop an algorithm which to find lcs for 3 strings.
+
+Input Description:
+You are given 3 strings.
+
+Output Description:
+Print the lcs of 3 string or print -1 if there is no lcs between 3 strings
+
+Sample Input :
+Guvi yuvi yuvirat
+Sample Output :
+uvi
+</body>
+</html>
