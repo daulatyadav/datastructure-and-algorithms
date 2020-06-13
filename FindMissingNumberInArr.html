@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data=['1', '3', '5', '2']
+        var unArr = []
+data.forEach((e,i)=>{
+    data[i]=Number(e)
+})
+var max = Math.max(...data)
+for(let i=1;i<=max;i++){
+     data.includes(i)?'':unArr.push(i);    
+}
+console.log(unArr.join(' '))
+    </script>
+</head>
+<body>
+    <p>
+        You are given a number n,ranging from 1 to n. Out of which one number is missing. Your task is to print that missing number.
+Input Description:
+You are given a number ‘n’.
+
+Output Description:
+Print the missing number.
+
+Sample Input :
+5
+1 3 5 2
+Sample Output :
+4
+    </p>
+</body>
+</html>
