@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data=[ 'k = 3', '1 3', '2 4 6', '0 9 10 11' ]
+        var combArr=[]
+userInput.shift()
+userInput.forEach(e=>{
+    e = e.split(" ")
+       e.forEach(val=>{
+         combArr.push(Number(val))
+    })
+    
+})
+combArr.sort(function(a,b){
+    return a-b;
+})
+console.log(combArr.join(' '))
+    </script>
+</head>
+<body>
+    <p>
+        Given k sorted arrays of possibly different sizes, merge them and print the sorted output.
+Input Size : N<=100
+Example:
+INPUT
+k = 3
+1 3
+2 4 6
+0 9 10 11
+OUTPUT
+0 1 2 3 4 6 9 10 11
+
+
+    </p>
+</body>
+</html>
