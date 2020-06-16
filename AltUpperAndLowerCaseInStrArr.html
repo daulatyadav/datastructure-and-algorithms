@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var userInput =[ 'dasds dasdad dasd' ]
+        var data = userInput[0].split(" ")
+        var arrStr = [];
+        data.forEach((e,i)=>{
+            e=e.split(" ")
+            if(i%2===0){
+                e.forEach(char=>{
+                    let charArr =[]
+                    charArr.push(char.toUpperCase())
+                    arrStr.push(charArr.join(''))
+                })
+            }else {
+                e.forEach(char=>{
+                    let charArr =[]
+                    charArr.push(char.toLowerCase())
+                    arrStr.push(charArr.join(''))
+                })
+            }
+            
+        })
+            console.log(arrStr.join(' '))
+    </script>
+</head>
+<body>
+    <p>
+        You are given a string ‘s’.Your task is to print the string in alternate lowercase and uppercase order.
+
+        Input Description:
+        You are given a string
+
+        Output Description:
+        Print the string according to given criteria
+
+        Sample Input :
+        abcd efgh ijkl
+        Sample Output :
+ABCD efgh IJKL
+    </p>
+</body>
+</html>
