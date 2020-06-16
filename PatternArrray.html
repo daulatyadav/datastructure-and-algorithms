@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var userInput ="Aab"
+        var data = userInput[0].split("");
+        var uniArr=[]
+        data.forEach(e=>{
+            uniArr.includes(e)?"":uniArr.push(e)
+        })
+        console.log(uniArr.length==3?1:0)
+    </script>
+</head>
+<body>
+    <p>
+        You are given a string ‘s’. Your task is to find whether string is beautiful or not. A string is said to be beautiful whenever string is made up of only three characters. All the three characters must be distinct. Print true if string is beautiful and false when it is not beautiful
+
+        Input Description:
+        You are given a string
+
+        Output Description:
+        Print ‘1’ when string is beautiful and ‘0’ when it is not
+
+        Sample Input :
+        Aab
+        Sample Output :
+        1
+    </p>
+    
+</body>
+</html>
