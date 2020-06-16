@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        userInput = [ '{({})}' ]
+        var data = userInput[0].split(" ");
+        var arrString = data[0].split('')
+        var firstHalf = arrString.slice(0,arrString.length/2)
+        var secHalf = arrString.slice((arrString.length/2),arrString.length+1)
+        firstHalf.forEach((e,i)=>{
+            if(e=='{'){firstHalf[i]='}'}
+            if(e=='['){firstHalf[i]=']'}
+            if(e=='('){firstHalf[i]=')'}
+            if(e=='<'){firstHalf[i]='>'}
+        })
+        console.log(firstHalf.toString()==secHalf.toString()?1:0)
+    </script>
+</head>
+<body>
+    <p>
+        you are given a string made up of parenthesis only.Your task is to check whether parenthesis are balanced or not.If they are balanced print 1 else print 0
+
+Input Description:
+You are given a string ‘s’
+
+Output Description:
+Print 1 for balanced and 0 for imbalanced
+
+Sample Input :
+{({})}
+Sample Output :
+1
+    </p>
+</body>
+</html>
