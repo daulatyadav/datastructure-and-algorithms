@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data="aabbcc"
+        var data = userInput[0].split("");
+        var uniArr=[]
+        data.forEach(e=>{
+            if(!uniArr.includes(e)){
+                uniArr.push(e)
+            }
+        })
+        console.log(uniArr.length==3?'Wonder':-1)
+    </script>
+</head>
+<body>
+    <p>
+        You are given a string. You have to print “Wonder” if the string is wonderful and -1 if it is not. A wonderful string is a string,which is made up of exactly 3 different characters.
+
+        Input Description:
+        You are given a string
+
+        Output Description:
+        Print “Wonder” if it is wonderful and -1 if it is not
+
+        Sample Input :
+        aabbcc
+        Sample Output :
+        Wonder
+    </p>
+    
+</body>
+</html>
