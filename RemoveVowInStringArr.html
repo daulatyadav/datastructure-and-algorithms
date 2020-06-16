@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data =[ 'I', 'am', 'shrey' ]
+        var consArr=[]
+        data.forEach(e=>{
+    e = e.split('')
+    var result = e.filter(e => e.toLowerCase()!='a'&&
+    e.toLowerCase()!='e'&&
+    e.toLowerCase()!='i'&&
+    e.toLowerCase()!='o'&&
+    e.toLowerCase()!='u');
+    result.length!==0?consArr.push(result.join('')):consArr.push("")})
+
+console.log(data.toString("")!==consArr.toString("")?consArr.join(' '):-1)
+    </script>
+</head>
+<body>
+    <p>
+        You are given a string.Your task is to print only the consonants present in the string without affecting the sentence spacings if present. If no consonants are present print -1
+
+Input Description:
+You are given a string ‘s’.
+
+Output Description:
+Print only consonants.
+
+Sample Input :
+I am shrey 
+Sample Output :
+ m shry
+    </p>
+    <h1>Check Console for an answer</h1>
+</body>
+</html>
