@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        userInput= "AC30BD40"
+        var data = userInput[0].split("");
+        var charArr=[]
+        var numArr =[]
+        data.forEach(e=>{
+            e>=0 && e<=9? numArr.push(e):charArr.push(e)
+        })
+        let sum = numArr.reduce(function (a, b) {
+        return Number(a) + Number(b)
+        }, 0)
+        charArr.push(sum)
+        console.log(charArr.join(''))
+    </script>
+</head>
+<body>
+    <p>
+        You are given a string ‘s’.Your task is to print the string in the order they are present and then sum of digits.
+
+        Input Description:
+        You are given a string ‘s’.
+
+        Output Description:
+        Print the string and then at last sum of all the digits
+
+        Sample Input :
+        AC30BD40
+        Sample Output :
+        ACBD7
+    </p>
+    
+</body>
+</html>
