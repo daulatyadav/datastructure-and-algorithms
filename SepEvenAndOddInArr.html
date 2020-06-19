@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        userInput = [ 'XCODE' ]
+        var data = userInput[0].split("");
+        console.log(data)
+        var arrOdd = []
+        var arrEven = []
+        var mainArr=[]
+        data.forEach((e,i)=>{
+            i%2===0?arrEven.push(e):arrOdd.push(e)
+        })
+        mainArr.push(arrEven.join(''))
+        mainArr.push(arrOdd.join(''))
+        console.log(mainArr.join(' '))
+    </script>
+</head>
+<body>
+    <p>
+        Given a string S, print 2 strings such that first string containing all characters in odd position(s) and other containing all characters in even position(s).
+        Sample Testcase :
+        INPUT
+        XCODE
+        OUTPUT
+        XOE CD
+    </p>
+</body>
+</html>
