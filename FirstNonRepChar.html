@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        userInput = ['apple']
+        var data = userInput[0].split("");
+        var dataC = userInput[0].split("");
+        var unqArr = []
+
+        for(let i =0;i<data.length;i++){
+            dataC.splice(0,1)
+            dataC.includes(data[i])?"":unqArr.push(data[i])
+            if (unqArr.length=== 1) { break; }
+        }
+        console.log(unqArr.join(' '))
+    </script>
+</head>
+<body>
+    <p>
+        You are given a string ‘S’ consisting of lowercase Latin Letters. Find the first non repeating character in S. If you find all the characters are repeating print the answer as -1
+
+        Input Description:
+        You are given a string ‘s’
+
+        Output Description:
+        Print the first non occurring character if possible else -1.
+
+        Sample Input :
+        apple
+        Sample Output :
+        a
+    </p>
+</body>
+</html>
