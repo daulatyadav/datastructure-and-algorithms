@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        userInput = [ 'john johnny jackie johnny john jackie jamie jamie john johnny jamie johnny john' ]
+        var data = userInput[0].split(" ");
+        var arrJson = []
+        data.forEach((val,i)=>{
+            var indices = data.map((e, i) => e === val ? i : '').filter(String)
+            arrJson.push({val:val,frq:indices.length})
+        })
+        arrJson.sort(function(a,b){
+            return b.frq - a.frq
+        })
+        console.log(arrJson[0].val,arrJson[0].frq)
+
+    </script>
+</head>
+<body>
+    <p>
+        In a school there are voting to choose the monitor of class.Your task is to tell which candidate is winner and if there is a tie print the name of candidate whose come first in lexicographical order.
+
+        Input Description:
+        You are given with the space separated names.
+
+        Output Description:
+        Print the winner’s name and the votes he earned.
+
+        Sample Input :
+        john johnny jackie johnny john jackie jamie jamie john johnny jamie johnny john
+        Sample Output :
+        john 4
+    </p>
+</body>
+</html>
