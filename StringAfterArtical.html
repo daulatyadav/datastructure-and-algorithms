@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var userInput = [ 'The sun rises in the east' ]
+        var data = userInput[0].split(" ");
+        var consonentArr= []
+        data.forEach((e,i)=>{
+            e = e.toLowerCase()
+            e==='an'||e==='a'||e==='the'? consonentArr.push(data[i+1]):''
+        })
+        console.log(consonentArr.join(' '))
+    </script>
+</head>
+<body>
+    <p>
+        You are given a paragraph.Your task is to print the words that come just after articles.
+
+        Input Description:
+        You are given a string ‘s’
+
+        Output Description:
+        print the words that come just after articles and -1 if there are no articles
+
+        Sample Input :
+        The sun rises in the east
+
+        Sample Output :
+sun east
+    </p>
+</body>
+</html>
