@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var userInput = ['787']
+        var data = userInput[0].split("")
+        var count=0
+        if(data<10){
+            console.log(data[0])
+        }else{
+
+        for(let i=1;i<=Number(data.join(''));i++){
+            let temArr = []
+            temArr[0]=  i.toString()
+            Number(temArr[0].split('').reverse().join(''))===Number(temArr[0].split('').join(''))?count++:""
+        }
+        console.log(count)
+}
+    </script>
+</head>
+
+<body>
+    <p>
+        Simi is learning about palindromic numbers. Her teacher gave him the task to count all palindromic numbers present in that range.Simi has told you about this and want your help. You design an algorithm in order to help simi.
+
+        Input Description:
+        You will be given a number ‘n’
+
+        Output Description:
+        Print the count of all palindromic numbers till ‘n’(inclusive)
+
+        Sample Input :
+        5
+        Sample Output :
+        5
+    </p>
+</body>
+</html>
