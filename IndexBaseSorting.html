@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        userInput = [ '10', '12 4 2 7 45 8 1 9 22 11', '4 8' ]  // array length, Array, Range Index
+        var data = userInput[0].split(" ");
+        var arrVal = userInput[1].split(" ");
+        var range = userInput[2].split(" ");
+        var arrList = []
+            for(let i =Number(range[0]);i<=Number(range[1]);i++ ){
+                arrList.push(Number(arrVal[i]))
+            }
+            arrList.sort(function(a, b){return b - a});
+            arrVal.splice(Number(range[0]),arrList.length,...arrList)
+            arrVal.forEach((e,i)=>{
+                arrVal[i] = Number(e)
+            })
+            console.log(arrVal.join(' '))
+    </script>
+</head>
+<body>
+    <p>
+        You are given an array of N elements. Your task is to sort a subarray denoted by the index values i1 and i2 in descending order. Note: Index values start at 0. The sorting must be completed in O(i2-i1+1)log(i2-i1+1)
+ 
+
+        Input Description:
+        Size of array followed by elements of the array. The third line contains the start and end indices of the subarray( i1 and i2)
+
+        Output Description:
+        A partially sorted array
+
+        Sample Input :
+        6
+        34 9 2 10 56
+        1 3
+        Sample Output :
+        34 2 9 10 56
+    </p>
+</body>
+</html>
