@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var userInput =[ 'A 34 89 98', 'B 98 87 98', 'C 87 67 98' ]
+    userInput.forEach((e,i)=>{
+    e = e.split(" ")
+    stdArr.push({
+        "student":e[0],
+        "cs":Number(e[1]),
+        "math":Number(e[2]),
+        "english":Number(e[3])
+        
+    })
+})
+stdArr.sort(function(a, b) {
+    return b["math"] - a["math"] || b["cs"] - a["cs"];
+});
+stdArr.forEach(e=>{
+    console.log(e.student,e.cs,e.math,e.english)
+})
+    </script>
+</head>
+<body>
+    <p>
+        You are given with the marks of N students in CS, Maths and English. Sort the students based on marks in maths. If 2 students have the same marks in maths, sort them based on marks in CS. If there is a tie, sort based on marks in English. All the sorting must be done in descending order.
+ 
+
+        Input Description:
+        Number of students followed by student id,marks in CS, Maths and English
+
+        Output Description:
+        Sorted list of students
+
+        Sample Input :
+        3
+        A 34 89 98
+        B 98 87 98
+        C 87 67 98
+        Sample Output :
+        A 34 89 98
+        B 98 87 98
+        C 87 67 98
+    </p>
+</body>
+</html>
