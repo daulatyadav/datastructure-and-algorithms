@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var data = [1, 6, 4, 56, 56, 56, 6, 4, 2]
+var uniArr = []
+var minFrqArr = []
+data.forEach((val,i)=>{
+    if(data.lastIndexOf(val)==i){
+var frq = data.map((e, i) => e === val ? i : '').filter(String)
+    uniArr.push({"value":val,"frq":frq.length})
+    }
+})
+
+uniArr.sort(function(a,b){
+    return a.frq-b.frq || b.value-a.value
+})
+uniArr.forEach((e,i)=>{
+    if(e.frq === uniArr[0].frq){
+        minFrqArr.push(e.value)
+    }
+})
+    console.log(minFrqArr.join(' '))
+
+    </script>
+</head>
+<body>
+    <p>
+        You are given an array of numbers. Print the least occurring element. If there is more than 1 element print all of them in decreasing order of their value.
+
+        Input Description:
+        You are given a number ‘n’ denoting size of array. Next line contains n space separated numbers.
+
+        Output Description:
+        Print the number as mentioned
+
+        Sample Input :
+        9
+        1 6 4 56 56 56 6 4 2
+        Sample Output :
+        2 1
+    </p>
+</body>
+</html>
