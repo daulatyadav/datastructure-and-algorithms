@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    var userInput = ['jnfjsnfnsfnsn']
+    var data = userInput[0].split("");
+    var arr=[]
+    var copyArr = []
+    data.forEach((e,i)=>{
+    copyArr = userInput[0].split("");
+    var diff = data.lastIndexOf(e) - i
+    if(diff!==0){
+    arrSlice = copyArr.splice(i,diff+1)
+    if(arrSlice.toString() == arrSlice.reverse().toString()){
+            arr.push(arrSlice)
+    }
+    }
+   
+})
+    var longest = arr.reduce(function (a, b) { return a.length > b.length ? a : b; });
+    console.log(longest.join(''))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
