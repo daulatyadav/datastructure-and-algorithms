@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        userInput = ['unkjla']
+var data = userInput[0].split("");
+var vowArr = []
+var consArr = []
+data.forEach((e,i)=>{
+    let d = e.toLowerCase()
+    d==="a"||d==="e"||d==="i"||d==="o"||d==="u"?
+    vowArr.push(e):consArr.push(e)
+})
+conArr = vowArr.join('').concat(consArr.join(''))
+console.log(conArr)
+    </script>
+</head>
+<body>
+    <div>
+        Given a string S ,print the vowels first and then consonants in the same order as they have occurred in the string.
+Input Size : N <= 10000
+Sample Testcase :
+INPUT
+GuVI
+OUTPUT
+uIGV
+    </div>
+    
+</body>
+</html>
