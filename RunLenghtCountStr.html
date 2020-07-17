@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    data0 = ['a','a,','b','b','b','b','c','c','c']
+    var count = 0
+    var track = data0[0]
+    var arr= []
+    for(let i = 0,j=0;i<data0.length;i++){
+    if(track === data0[i]){
+       // console.log("i m up")
+        count++
+    }
+    if(track !== data0[i]){
+        arr.push([track,count].join(''))
+        track = data0[i]
+        //console.log("i m below",data0[i],track)
+        count = 1
+    }
+    if(i+1==data0.length){
+    arr.push([track,count].join(''))
+    }
+    
+}
+console.log(arr.join(''))
+    </script>
+</head>
+<body>
+    <div>
+    Given a string, print the run-length encoded output.
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+aaab
+OUTPUT
+a3b1
+    </div>
+</body>
+</html>
