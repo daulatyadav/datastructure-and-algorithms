@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+var data1 = [2,3,6,8,3,5]
+var arr = []
+var arrList = []
+data1.forEach(e=>{
+    arr.push(e)
+    arrList.push(Math.min(...arr))
+})
+console.log(arrList.join(' '))
+    </script>
+</head>
+<body>
+    <div>
+        Given a number N. There will be N numbers given. Print the smallest number in the given list after each input(Hint use priority queue).
+Input Size : N <= 100000
+Sample Testcase :
+INPUT
+4
+3 2 4 1
+OUTPUT
+3 2 2 1
+    </div>
+</body>
+</html>
